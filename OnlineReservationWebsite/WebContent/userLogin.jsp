@@ -91,6 +91,9 @@ input{
 				    response.sendRedirect(redirectURL);
 				} else if (type_of_user == 2) {
 					// have to make a Customer-Rep page 
+					String redirectURL = "CustomerRepPage.jsp";
+					session.setAttribute("CurrentUser", userLogin);
+				    response.sendRedirect(redirectURL);
 				} else {
 					// have to make a Admin Page
 				}
